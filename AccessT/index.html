@@ -1,0 +1,51 @@
+<html>
+
+<script type="text/javascript">
+    var input, button;
+    
+   onload = function () {
+       console.log("is pe faza");
+       console.log("is pe faza");
+     input = document.getElementById("inputText");
+     button = document.getElementById("translate");
+    
+        button.addEventListener( "click" , trans); 
+   }
+        function trans()
+        {
+           // alert("is pe faza");
+            var from = "en", to = "ro", text = input.value.toString();
+    var accessToken = 'http%3a%2f%2fschemas.xmlsoap.org%2fws%2f2005%2f05%2fidentity%2fclaims%2fnameiden'+
+'tifier=pfndfhoefngogglandagkdjllicpmkjb&http%3a%2f%2fschemas.microsoft.com%2facc'+
+'esscontrolservice%2f2010%2f07%2fclaims%2fidentityprovider=https%3a%2f%2fdatamark'+
+'et.accesscontrol.windows.net%2f&Audience=http%3a%2f%2fapi.microsofttranslator.co'+
+'m&ExpiresOn=1436962222&Issuer=https%3a%2f%2fdatamarket.accesscontrol.windows.net'+
+'%2f&HMACSHA256=2AE7IlU%2b4Yt03EYRyF0T9e05Y57HcbxRkxxeUn%2fs2ac%3d';
+
+            var s = document.createElement("script");
+            s.src = "http://api.microsofttranslator.com/V2/Ajax.svc/Translate" +
+                "?appId=Bearer " + encodeURIComponent(accessToken) +
+                "&from=" + encodeURIComponent(from) +
+                "&to=" + encodeURIComponent(to) +
+                "&text=" + encodeURIComponent(text) +
+                "&oncomplete=mycallback";
+            
+            document.body.appendChild(s);
+            console.log("am trecut de append");
+        }
+
+        function mycallback(response)
+        {
+            alert(response);
+            console.log("am ajuns la response");
+        }
+
+    </script>
+
+    
+<body>
+   Text: <input type="text" name="text" id="inputText"> <br>
+    <button  id="translate">Translate</button>
+    
+</body>    
+</html>

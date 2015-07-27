@@ -1,0 +1,14 @@
+{
+  "name": "AccessT",
+  "version": "0.0.0",
+  "description": "",
+  "main": "acces_token.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+    "dependencies" : {
+      "request" : "*"  
+    },
+  "author": "Ilciuc Sergiu",
+  "license": "BSD"
+}

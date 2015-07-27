@@ -1,0 +1,51 @@
+{
+    
+    "manifest_version" :  2,
+    "name" : "WordInfo",
+    "description" : " Traduce un text selectat.",
+    // un intreg maxim 4, avertizeaza atunci cand e nevoie de update
+    "version" : "0.0.1",
+    //controleaza butonul extensiei
+    "browser_action" : {
+      "default_icon" : "images/icon.png",
+      "default_popup" : "popup.html",
+      "default_title" : "Setari"
+    },
+    
+    
+    // page_action similar cu browser_action 
+    //dar apare in bara pt url doar cand este nevoie.
+    "permissions" :
+    [
+        "activeTab",
+        "https://ajax.googleapis.com/"
+        
+    ],
+    
+    //persistent/event  
+    //prima avtiva tot timpul 
+    // adoua doar cand e nevoie
+    
+    //"background":{
+    // "scripts"  : ["background.js"],
+    // "persistent" : false/true
+    //}
+    
+    //content_sctipts
+    //folosit pt a accesa DOM
+    //executat la fiecare refresh
+    
+    "content_scripts": [
+        {
+         "matches" : ["http://*/*", "https://*/*"],
+            "js" : ["jquery-1.11.3.min.js", "content2.js"]
+        }
+        ],
+    
+    "devtools_page" : "devtools.html",
+    
+    "web_accessible_resources": [
+    "images/*",
+    "css/*"
+    ]
+}

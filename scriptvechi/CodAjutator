@@ -1,0 +1,15 @@
+<div class="selection-sharer anim" id="selection-sharer-popover" style="position: absolute; top: 3098.921875px; left: 638px;">
+<div id="selection-sharer-popover-inner">
+    <ul id="selection-sharer-popover-list">
+        <li>
+            <a class="goicon icon-twitter-circled" title="Share this selection on Twitter" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fgigaom.com%2F2010%2F10%2F29%2Fusing-apis-not-quite-as-hard-as-it-looks%2F&amp;via=gigaom&amp;text=hould%20think%20of%20it%20as%20a%20little%20like%20a%20password%20that%20shouldn%E2%80%99t%20be%20shared%20with%20other%20people.%20In%20many..."></a>
+        </li>
+        <li>
+            <a class="goicon icon-facebook-circled" title="Share this selection on Facebook" href="https://www.facebook.com/dialog/feed?app_id=180650338636285&amp;link=https%3A%2F%2Fgigaom.com%2F2010%2F10%2F29%2Fusing-apis-not-quite-as-hard-as-it-looks%2F&amp;name=Using+APIs%3A+Not+Quite+as+Hard+as+it+Looks&amp;description=hould%20think%20of%20it%20as%20a%20little%20like%20a%20password%20that%20shouldn%E2%80%99t%20be%20shared%20with%20other%20people.%20In%20many...&amp;caption=Gigaom&amp;redirect_uri=https%3A%2F%2Fgigaom.com%2F2010%2F10%2F29%2Fusing-apis-not-quite-as-hard-as-it-looks%2F&amp;picture=https%3A%2F%2Fgigaom2.files.wordpress.com%2F2010%2F10%2Fscreen-shot-2010-10-28-at-9-22-49-pm.png%3Fw%3D300"></a>
+        </li>
+    </ul>
+    </div>
+    <div class="selection-sharer-popover-clip">
+        <span class="selection-sharer-popover-arrow"></span>
+    </div>
+</div>

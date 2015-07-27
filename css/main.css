@@ -1,0 +1,65 @@
+.right {
+ float : right;   
+}
+
+#showTranslate {
+ 
+    
+}
+
+details {
+    position: relative;
+    color: aliceblue;
+ background-color: dimgrey; 
+    
+}
+
+#miniPopup {
+    
+    position: relative;
+    top: 50;
+    left: 20;
+    background-color: darkslategray;
+    height: 25px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+
+
+#miniPopup button {
+    text-align: center;
+    border-radius: 50%;
+    border: 5px;
+    height: 20px;
+    width: 20px;
+    
+}
+#miniButton1 {
+ 
+    position: absolute;
+    top: 2.5px;
+    left: 20px;
+}
+#miniButton2 {
+   position: absolute;
+    top: 2.5px;
+    left: 60px;
+}
+
+.setings {
+    position: relative;
+ float: left;   
+}
+
+#form1 {
+   
+    position: relative;
+    top: 10;
+    left: 5;
+     width: 100%;
+    
+}
+#form1 p {
+ position: relative;
+}
